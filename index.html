@@ -1,22 +1,22 @@
 <html>
 <head>
-  <script src='javascripts/app.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <link rel='stylesheet' href='stylesheets/style.css' type='text/css' />
-
+  <script src='javascripts/app.js'></script>
   <title></title>
 </head>
 <body>
-  <input type='number' id='num1' placeholder="num1"/>
-  <input type='number' id='num2' placeholder="num2"/>
-  <br>
-  <br>
-  <button onclick='operator(plus)'>+</button>
-  <button onclick='operator(subtract)'>-</button>
-  <button onclick='operator(multiply)'>*</button>
-  <button onclick='operator(divide)'>/</button>
-  <br>
-  <br>
-  <button onclick='equals()'>=</button>
-  <label id='output'></label>
+  <div class='row'>
+    <div class='col m4 offset-m4'>
+      <input type='number' id='input_1' placeholder="enter your first #"/>
+      <button onclick='operator(1)'>+</button>
+      <button onclick='operator(2)'>-</button>
+      <button onclick='operator(3)'>*</button>
+      <button onclick='operator(4)'>/</button>
+      <input typt='number' id='input_2' placeholder='enter your second #'/>
+      <button onclick='calculate()'>=</button>
+      <label id='output'></label>
+    </div>
+  </div>
 </body>
 </html>
